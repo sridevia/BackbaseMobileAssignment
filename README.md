@@ -1,11 +1,16 @@
 # BackbaseMobileAssignment
 
 Search Cities Solution:
+
 •	Given cities are bucketized into map with first letter of the city name. Maintaining two Collections. These collections are prepared on the app open first time.
+
 	o	List<Cities> with full cities 
 	o	Map<Char, List<Cities> with bucketized data. Example : {‘a’  City(‘Alabama’)
+	
 •	When user launch the app and no search string given on the search field, List is populated with the List<Cities> with full cities.
+	
 •	User starts typing in the search field.
+
 	o	When user types the first letter, will get the data from the Prepared Base Map.
 	o	When user types the second letter, search happens on the list prepared in the above step and placing the search result into a temporary map (Key: user search keyword and Value: Result) to reuse the result when user click on backspace key to go clear the text.
 	o	When user types the third letter, filter happens on the result of the two letters search and result of 3 letters will put into the temporary map.
